@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingRight="40dp"
+    android:paddingLeft="40dp"
+    android:orientation="vertical"
+    android:background="#55559C"
+    tools:context=".SignUpActivitiy">
+
+
+    <EditText
+        android:id="@+id/signUpUsernameEdittextId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="Username"
+        />
+    <!--<EditText-->
+    <!--android:id="@+id/signUpPasswordEdittextId"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textSize="20sp"-->
+    <!--android:hint="Password"-->
+    <!--/>-->
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/login_passwordId"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:passwordToggleEnabled="true"
+        app:errorEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <EditText
+
+        android:id="@+id/inputPhonNumID"
+        android:hint="Enter phone number"
+        android:digits="0341256789."
+        android:layout_width="match_parent"
+        android:inputType="phone"
+        android:maxLength="11"
+        android:layout_height="50dp">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/signUpButtonId"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:textColor="@android:color/white"
+        android:background="@drawable/shape_designbutton"
+        android:layout_marginTop="6dp"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
